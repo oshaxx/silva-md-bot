@@ -1,0 +1,42 @@
+{
+  "theme": "TrapHouse",
+  "AUTHOR": "OshaZx",
+  "LANGUAGE": "English",
+  "LANGCODE": "en",
+  "STRINGS": {
+    "global": {
+      "botName": "TrapHouse",
+      "body": "WhatsApp Bot",
+      "greet": "Boss",
+      "greet2": "Hey Boss",
+      "pic1": "https://files.catbox.moe/8havgz.PNG",
+      "pic2": "https://files.catbox.moe/8havgz.PNG",
+      "pic3": "https://files.catbox.moe/8havgz.PNG",
+      "pic4": "https://files.catbox.moe/8havgz.PNG",
+      "pic5": "https://files.catbox.moe/8havgz.PNG",
+      "pic6": "https://files.catbox.moe/8havgz.PNG",
+      "pic7": "https://files.catbox.moe/8havgz.PNG",
+      "dotbody": "TRAP JUMPIN'🔋",
+      "promote": "Admin role granted.",
+      "demote": "Admin role removed.",
+      "antlink": "Link detected. *Goodbye.*",
+      "mention": "Please mention a user.",
+      "title": "TrapHouse",
+      "footer": "TrapHouse",
+      "by": "Made by: OshaZx",
+      "success": "Done ✓",
+      "wait": "*Processing your request* ✅",
+      "admin": "⛔ This command is for group admins only.",
+      "botAdmin": "❗ Please give me admin role first.",
+      "owner": "⛔ This command is reserved for the bot owner.",
+      "group": "❗ This feature is for groups only.",
+      "private": "⚠️ This feature is for private chats only.",
+      "bot": "⚠️ This feature is for the bot number only.",
+      "alive": "TRAP JUMPIN'🔋.",
+      "aliveEmoji": "⚡"
+    },
+    "error": {
+      "text": "⚠️ An error occurred. Please try again."
+    }
+  }
+}
