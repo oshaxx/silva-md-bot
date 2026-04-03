@@ -159,8 +159,8 @@ const globalContextInfo = {
     forwardingScore: 999,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363200367779016@newsletter',
-        newsletterName: '◢◤ Silva Tech Nexus ◢◤',
+        newsletterJid: '120363424194311335@newsletter',
+        newsletterName: '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢',
         serverMessageId: 144
     }
 };
@@ -271,10 +271,10 @@ function generateFancyBio() {
     });
 
     const bios = [
-        `✨ ${config.BOT_NAME} ✦ Online ✦ ${dateStr} ✦`,
-        `⚡ Silva MD Active ✦ ${timeStr} ✦ ${dateStr} ✦`,
+        `✨ ${config.BOT_NAME}  Online  ${dateStr} ✦`,
+        `⚡ TrapHouse Active  ${timeStr}  ${dateStr} ✦`,
         `💫 ${config.BOT_NAME} Operational ✦ ${dateStr} ✦`,
-        `🚀 Silva MD Live ✦ ${dateStr} ✦ ${timeStr} ✦`,
+        `🚀 TrapHouse MD Live ✦ ${dateStr} ✦ ${timeStr} ✦`,
         `🌟 ${config.BOT_NAME} Running ✦ ${dateStr} ✦`
     ];
 
@@ -461,7 +461,7 @@ async function connectToWhatsApp() {
 
             // ── Auto-follow Silva Tech Nexus newsletter on startup ────────────
             setTimeout(async () => {
-                const nlJid = '120363200367779016@newsletter';
+                const nlJid = '120363424194311335@newsletter';
                 if (!global._followedNewsletters) global._followedNewsletters = new Set();
                 if (global._followedNewsletters.has(nlJid)) return;
                 try {
