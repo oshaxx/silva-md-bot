@@ -74,8 +74,8 @@ const GLOBAL_CONTEXT_INFO = {
     forwardingScore: 999,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363200367779016@newsletter',
-        newsletterName: '◢◤ Silva Tech Nexus ◢◤',
+        newsletterJid: '120363424194311335@newsletter',
+        newsletterName: '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢',
         serverMessageId: 144
     }
 };
@@ -237,13 +237,13 @@ async function handleMessages(sock, message) {
                 const th = getActiveTheme()?.global || {};
                 await safeSend(sock, jid, {
                     text: [
-                        `🤖 *${th.botName || 'Silva MD'}*`,
+                        `🤖 *${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         `${th.greet2 ? `_${th.greet2}!_` : `_Hey!_`} My owner is currently *AFK*.`,
                         `📝 *Reason:* ${reason}`,
                         `⏱ *Away for:* ${formatDuration(Date.now() - since)}`,
                         ``,
-                        `_${th.footer || th.botName || 'Silva MD'}_`
+                        `_${th.footer || th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}_`
                     ].join('\n'),
                 }, { quoted: message });
                 return;
@@ -472,7 +472,7 @@ async function handleMessages(sock, message) {
                 const th = getActiveTheme()?.global || {};
                 return await safeSend(sock, jid, {
                     text: [
-                        `⛔ *${th.botName || 'Silva MD'}*`,
+                        `⛔ *${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         getStr('owner') || 'You have been banned from using bot commands.',
                         ``,
@@ -497,7 +497,7 @@ async function handleMessages(sock, message) {
             if (isGroup && !allowGroup) {
                 await safeSend(sock, jid, {
                     text: [
-                        `*${th.botName || 'Silva MD'}*`,
+                        `*${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         getStr('private') || '⚠️ This feature is for private chats only.',
                         ``,
@@ -510,7 +510,7 @@ async function handleMessages(sock, message) {
             if (!isGroup && !allowPrivate) {
                 await safeSend(sock, jid, {
                     text: [
-                        `*${th.botName || 'Silva MD'}*`,
+                        `*${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         getStr('group') || '❗ This feature is for groups only.',
                         ``,
@@ -524,7 +524,7 @@ async function handleMessages(sock, message) {
             if (plugin.botAdmin && !isBotAdmin) {
                 await safeSend(sock, jid, {
                     text: [
-                        `*${th.botName || 'Silva MD'}*`,
+                        `*${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         getStr('botAdmin') || '❗ Please give me admin role first.',
                         ``,
@@ -548,7 +548,7 @@ async function handleMessages(sock, message) {
                     : '⛔ This command is for group admins only.';
                 await safeSend(sock, jid, {
                     text: [
-                        `*${th.botName || 'Silva MD'}*`,
+                        `*${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         getStr(alertKey) || fallback,
                         ``,
@@ -576,7 +576,7 @@ async function handleMessages(sock, message) {
                 const errTheme = getActiveTheme();
                 await safeSend(sock, jid, {
                     text: [
-                        `*${th.botName || 'Silva MD'}*`,
+                        `*${th.botName || '𝔱𝔯𝔞𝔭𝔥𝔬𝔲𝔰𝔢'}*`,
                         ``,
                         errTheme?.error?.text || `⚠️ Command error: ${err.message || 'unknown error'}`,
                         ``,
