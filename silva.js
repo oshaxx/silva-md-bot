@@ -264,7 +264,7 @@ function generateFancyBio() {
         day: 'numeric'
     });
 
-    const timeStr = now.toLocaleTimeString('en-KE', {
+    const timeStr = now.toLocaleTimeString('en-LK', {
         hour: '2-digit',
         minute: '2-digit',
         hour12: true
@@ -273,9 +273,9 @@ function generateFancyBio() {
     const bios = [
         `✨ ${config.BOT_NAME}  Online  ${dateStr} ✦`,
         `⚡ TrapHouse Active  ${timeStr}  ${dateStr} ✦`,
-        `💫 ${config.BOT_NAME} Operational ✦ ${dateStr} ✦`,
-        `🚀 TrapHouse MD Live ✦ ${dateStr} ✦ ${timeStr} ✦`,
-        `🌟 ${config.BOT_NAME} Running ✦ ${dateStr} ✦`
+        `💫 ${config.BOT_NAME} Operational  ${dateStr} ✦`,
+        `🚀 TrapHouse ${dateStr}  ${timeStr} ✦`,
+        `🌟 ${config.BOT_NAME} Running  ${dateStr} ✦`
     ];
 
     return bios[Math.floor(Math.random() * bios.length)];
