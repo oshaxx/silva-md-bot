@@ -283,9 +283,9 @@ function generateFancyBio() {
 
 // ✅ Welcome Message
 async function sendWelcomeMessage(sock) {
-    const now = new Date().toLocaleString('en-US', {
+    const now = new Date().toLocaleString('en-LK', {
         weekday: 'short', month: 'short', day: 'numeric',
-        hour: '2-digit', minute: '2-digit', timeZone: 'Africa/Nairobi'
+        hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Colombo'
     });
 
     const welcomeMsg = [
